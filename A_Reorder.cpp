@@ -45,6 +45,27 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
+
+    ll t;
+    cin >> t;
+    ll n, m;
+    f0(i,t)
+    {
+        cin >> n >> m;
+        ll a[n+1];
+        ll sum = 0;
+        f0(j,n)
+        {
+            cin >> a[j];
+        }
+        sort(a, a+n);
+        f0(j,n)
+        {
+            sum += a[j];
+        }
+        if(sum == m) cout << "YES" << endl;
+        else cout << "NO" << endl;
+    }
     
 
 

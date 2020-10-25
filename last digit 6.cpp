@@ -46,7 +46,27 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
     
+    ll x=1000000, x6, xPrev;
+    //cin >> x;
 
+    for(ll i=1; i<x; i++)
+    {
+        x6 = i%10;
+        if(x6==6)
+        {
+
+        
+            xPrev = i/10;
+            //cout << x6 << endl << xPrev << endl;
+            
+            string xs6 = to_string(x6);
+            string xsPrev = to_string(xPrev);
+            string xs6Prev = xs6+xsPrev;  //strcat(xs6,xsPrev);
+
+            if(i*4==stoi(xs6Prev)) cout << xs6Prev << endl;
+            //else cout << "NULL: " << i << endl;
+        }
+    }
 
     return 0;
 }

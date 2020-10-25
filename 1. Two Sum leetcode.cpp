@@ -45,8 +45,19 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
-    
+    const int MAX_SIZE = 100;
+    int nums[MAX_SIZE]; 
+    int a;
+    int i=0, n=0;
+    while (cin >> a) {
+        nums[i++] = a;
+        n++;
+    }
 
+    f0(i,n)
+    {
+        if(nums[i]+nums[i+1]==nums[n]) cout << "[" << i << "," << i+1 <<"]"<< endl;
+    }
 
     return 0;
 }

@@ -4,14 +4,14 @@
 #include <cstdio>
 #include <iomanip>
 #include <algorithm>
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 
-#define lli             long long int
-#define ull             unsigned long long
+#define ll              long long int
+#define ul              unsigned long long
 #define ld              long double
 #define f0(i,n)         for(int i=0;i<n;i++)
 #define f1(i,n)         for(int i=1;i<=n;i++)
-#define nl              "\n"
+#define endl            "\n"
 #define lg(r,n)         (int)(log2(n)/log2(r))
 #define sf1(a)          scanf("%d",&a)
 #define sfl(a)          scanf("%lld",&a)
@@ -45,6 +45,13 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
+
+    ll ar[mx1], a, t=0, target=0;
+    while( getline(a,cin))
+    {
+        ar[t]=a;
+        t++;
+    }
 
 
 

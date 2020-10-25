@@ -45,8 +45,15 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
+    ll t = 0, a1,a2,b1,b2;
+    cin >> t;
+    while(t--){
+        cin >> a1 >> b1 >> a2 >> b2;
+        if(a1==a2 || b1==b2) cout << abs(a1-a2)+abs(b1-b2) << endl;
+        else cout << abs(a1-a2)+abs(b1-b2)+2 << endl;
+    }
     
-
+    
 
     return 0;
 }

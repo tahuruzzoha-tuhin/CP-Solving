@@ -45,8 +45,15 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
-    
 
-
+    ll t,n,i,j;
+    cin>>t;
+    while(t--)
+    {
+    	cin>>n;
+    	f0(i,n)
+    		f0(j,n)
+    			cout<<(i==j or i==j-1 or (i==n-1 and j==0))<<(j==n-1?'\n':' ');
+    }
     return 0;
 }
