@@ -1,28 +1,8 @@
-// Problem: Banknotes and Coins
-// Contest: URI Online Judge - Beginner
-// URL: https://www.urionlinejudge.com.br/judge/en/problems/view/1021
-// Memory Limit: 1024 MB
-// Time Limit: 1000 ms
-// 
-// Powered by CP Editor (https://cpeditor.org)
-
-/*
-Read a value of floating point with two decimal places. This represents a monetary value. After this, calculate the smallest possible number of notes and coins on which the value can be decomposed. The considered notes are of 100, 50, 20, 10, 5, 2. The possible coins are of 1, 0.50, 0.25, 0.10, 0.05 and 0.01. Print the message “NOTAS:” followed by the list of notes and the message “MOEDAS:” followed by the list of coins.
-
-Input
-The input file contains a value of floating point N (0 ≤ N ≤ 1000000.00).
-
-Output
-Print the minimum quantity of banknotes and coins necessary to change the initial value, as the given example.
-
-*/
-
 #include <iostream>
-#include <string>
-#include <cmath>
-#include <cstdio>
-#include <iomanip>
-#include <algorithm>
+#include <math.h>
+#include <cctype>
+#include <string.h>
+#include <cstring>
 #include <bits/stdc++.h>
 
 #define ll              long long int
@@ -60,12 +40,34 @@ template< class T > T lcm(T a, T b)
     return (a / gcd<T>(a, b) * b);
 }
 
+ll a=0,b,c=0,d=0,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
+int a1,b1,i2,c1=0;
+
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
-    
-
+   
+    string s;
+    cin>>s;
+    b=s.length();
+    sort(s.begin(),s.end());
+    for(i=0;i<b;i++)
+    {
+    	if(s[i]!=s[i-1])
+    	{
+    		c++;
+    	}
+    }
+    if((c+1)%2==0)
+	{
+		cout<<"IGNORE HIM!"<<endl;
+	}
+	else
+		cout<<"CHAT WITH HER!"<<endl;
+ 
+ 
+   // cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
 
     return 0;
 }
