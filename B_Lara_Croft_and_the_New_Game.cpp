@@ -46,9 +46,25 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
+    
+    ll n, m, k, up, right, left;
+    cin >> n >> m >> k;
+    
+	if (k < n){
+        cout << k+1 << " 1" << endl;
+		return 0;
+	}
+    bool p=true;
+	k -= n;
+	up = k / (m - 1);
+  
+    right = m - k % (m - 1);
+    left = k % (m - 1) + 2;
+    
+	cout << n - up << " ";
+	if (up & p) cout << right << endl;
+	else cout << left << endl;
 
-   
-     //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
-
-    return 0;
+           //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
+	return 0;
 }

@@ -46,8 +46,26 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
-
-   
+    
+    int n, c=0;
+    cin >> n;
+    char s[n+1]={'\n'};
+    f0(i,n){
+        cin >> s[i];
+    }
+    f0(i,n)
+        f0(i,n){
+            if(s[i]=='0' && s[i+1]=='1') swap(s[i], s[i+1]);
+    }
+    if(s[0]=='0') cout << '0';
+    else
+        {
+            if(s[0]=='1')cout<<'1';
+            f0(i,n) {
+                if(s[i]=='0') cout <<'0';
+            }
+        }
+    cout << endl;
      //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
 
     return 0;

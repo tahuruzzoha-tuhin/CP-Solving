@@ -47,6 +47,31 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
 
+    ll t, n, m, f;
+    cin >> t;
+    while(t--){
+        cin >> n >> m;
+        f=0;
+        ll i=1, an[2][2], am[2][2];
+        f1(i,n){
+            f1(j,n){
+                cin >> an[i][j]; 
+            }
+        }
+        if(m%2!=0) cout << "NO" << endl;
+        else{
+
+            for(ll i=1, j=1; i<=n && j<=n; i++, j++){
+                if(am[i][j]==an[i][j]) {
+                    f++;
+                    break;
+                }
+            }
+            if(f>0) cout << "YES" << endl;
+            else cout << "NO" << endl;
+            
+        }
+    }
    
      //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
 

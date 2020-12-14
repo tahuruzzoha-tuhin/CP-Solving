@@ -6,7 +6,6 @@
 #include <algorithm>
 #include <bits/stdc++.h>
 
-
 #define ll              long long int
 #define ul              unsigned long long
 #define ld              long double
@@ -35,20 +34,33 @@ using namespace std;
 
 template< class T > T gcd(T a, T b)
 {
-    return (b != 0 ? gcd<T>(b, a%b) : a);
+return (b != 0 ? gcd<T>(b, a%b) : a);
 }
 template< class T > T lcm(T a, T b)
 {
-    return (a / gcd<T>(a, b) * b);
+return (a / gcd<T>(a, b) * b);
 }
 
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr); cout.tie(nullptr);
+ios_base::sync_with_stdio(false);
+cin.tie(nullptr); cout.tie(nullptr);
 
-   
-     //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
+int n, t=0;
+cin >> n;
+int a[n+1][n+1]={0};
+f1(i,n)
+{
+    f1(j,n)
+    {
+       if((i+j)%2==0) cout << "W";
+       else cout << "B";
+    }
+    cout << endl;
+}
+    
 
-    return 0;
+    //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
+
+return 0;
 }

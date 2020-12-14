@@ -1,11 +1,4 @@
-#include <iostream>
-#include <string>
-#include <cmath>
-#include <cstdio>
-#include <iomanip>
-#include <algorithm>
 #include <bits/stdc++.h>
-
 
 #define ll              long long int
 #define ul              unsigned long long
@@ -46,9 +39,19 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
+    
+    ll t, a, b, c[mx3], d, e = 0, f = 0;
+    cin >> t;
+    f0(i,t)
+    {
+        cin >> a >> b;
+        if(a<=e) c[i] = (e-a)+b;
+        e = (e-a)+b;
 
-   
-     //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
+    }
+    cout << *max_element(c, c + t) << endl;
+    //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
+
 
     return 0;
 }

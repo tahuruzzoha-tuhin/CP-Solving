@@ -46,8 +46,20 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
+    
 
-   
+    string a;
+    string b;
+    int f=0, m=0, f1=0;
+    cin >> a >> b;
+     f0(i,b.length()){
+       if(a.find(b[i])!=string::npos) f++;
+    }
+     
+    if(f>0) cout << "YES" << endl;
+    else cout << "NO" << endl;
+
+
      //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
 
     return 0;

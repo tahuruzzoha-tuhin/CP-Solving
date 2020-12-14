@@ -47,8 +47,28 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
 
-   
-     //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
+    ll n, s;
+    while(cin >> n >> s){
+    ll i=0, a[n];
+    while(i<n){
+        cin >> a[i];
+        i++;
+
+    }
+   	ll ans = n + 1, sum = 0;
+	ll l = 0, r = 0;
+	while (r < n) {
+		sum += a[r++];
+		while (sum >= s) {
+			ans = min(ans, r - l);
+			sum -= a[l++];
+		}
+	}
+	cout << (ans == n + 1 ? '0' : ans )<< endl;
+    } //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
 
     return 0;
 }
+
+
+ 

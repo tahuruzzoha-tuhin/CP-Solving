@@ -47,7 +47,14 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
 
-   
+    double t, n, x;
+    cin >> t;
+    while(t--){
+        cin >> n >> x;
+        double p = ceil((n-2)/x);
+        if(n==1 || n==2) cout << "1" << endl;
+        else cout << p+1 << endl;
+    }
      //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
 
     return 0;

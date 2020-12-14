@@ -6,7 +6,6 @@
 #include <algorithm>
 #include <bits/stdc++.h>
 
-
 #define ll              long long int
 #define ul              unsigned long long
 #define ld              long double
@@ -46,8 +45,16 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
+    
+    ll n, p, q, rN=0;
+    cin >> n;
+    while(n--) 
+    {
+        cin >> p >> q;
+        if(p<q && (q-p)>=2) rN++;
+    }
+    cout << rN << endl;
 
-   
      //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
 
     return 0;

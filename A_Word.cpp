@@ -2,10 +2,10 @@
 #include <string>
 #include <cmath>
 #include <cstdio>
+#include <cctype>
 #include <iomanip>
 #include <algorithm>
 #include <bits/stdc++.h>
-
 
 #define ll              long long int
 #define ul              unsigned long long
@@ -46,8 +46,24 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
+    
+    string n;
+    cin >> n;
+    ll uc = 0, lc = 0;
+    ll t = n.length();
+    f0(i,t)
+    {   
+        if(n[i]>='A' && n[i]<='Z') uc++;
+        if(n[i]>='a' && n[i]<='z') lc++;
+    }
 
-   
+    if(uc>lc)
+        f0(i,t)
+            putchar(toupper(n[i]));
+    else
+        f0(i,t)
+            putchar(tolower(n[i]));
+    
      //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
 
     return 0;

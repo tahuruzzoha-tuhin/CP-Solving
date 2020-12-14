@@ -46,8 +46,38 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
+    
+    // cout << "hi" << endl;
+    ll t, n, k, x;
+    cin >> t;
+    while(t--){
+        cin >> n >> k;
+        x=k%3;
+        if(x==0) 
+        {   ll p=3;
+            f1(i,n){
+                if(i<p) cout << "a";
+                else if(i>p && i<2*p)
 
-   
+            }
+        }
+        if(x==1){
+            
+            f1(i,n){
+                
+            }
+     
+        }
+        
+        if(x==2){
+
+            f1(i,n){
+                
+            }
+                
+        }
+    }
+
      //cerr<<"Time Elapsed "<<(double)clock()/CLOCKS_PER_SEC <<" s"<<endl;
 
     return 0;
